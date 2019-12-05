@@ -1,4 +1,4 @@
-function! IsWSL()
+function! checkWSL#IsWSL()
   let uname = substitute(system('uname'),'\n','','')
   if uname == 'Linux'
     let lines = readfile("/proc/version")
